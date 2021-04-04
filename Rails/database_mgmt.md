@@ -1,3 +1,5 @@
+db:{drop,create,migrate,seed}
+
 ##### Get DB up and running
 ```sh
 $ rake db:create
