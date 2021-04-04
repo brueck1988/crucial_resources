@@ -1,5 +1,9 @@
 db:{drop,create,migrate,seed}
+
+
 rails g migration CreateApplications name:string street_address:string state:string zip_code:integer description:string status:string
+
+
 ##### Get DB up and running
 ```sh
 $ rake db:create
