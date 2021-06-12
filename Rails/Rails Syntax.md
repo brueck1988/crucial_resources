@@ -38,14 +38,14 @@
      (Also need to add "require 'webmock/rspec'" to spec/spec_helper.)
      For VCR, we need to add to spec/rails_helper:
      ```ruby
-    VCR.configure do |config|
-      config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-      config.hook_into :webmock
-      #config.filter_sensitive_data('DONT_SHARE_MY_PROPUBLIC_SECRET_KEY') { ENV['PROPUBLICA_KEY'] }   #Update per API
-      config.default_cassette_options = { re_record_interval: 7.days }
-      config.configure_rspec_metadata!
-    end
-    ```
+        VCR.configure do |config|
+          config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+          config.hook_into :webmock
+          #config.filter_sensitive_data('DONT_SHARE_MY_PROPUBLIC_SECRET_KEY') { ENV['PROPUBLICA_KEY'] }   #Update per API
+          config.default_cassette_options = { re_record_interval: 7.days }
+          config.configure_rspec_metadata!
+        end
+      ```
  * Run the following command in the terminal to install RSpec run: 
    ```ruby
    rails g rspec:install
