@@ -1,3 +1,4 @@
+
 ### Inventory of everything Rails g can do.
 ```sh
 $ rails g -h
@@ -27,6 +28,10 @@ $ rails g <name of generator> <options>
 #### Generate a new Rails app w/ Postgres support
 ```sh
 $ rails new my_app --database=postgresql
+```
+#### Generate a new Rails API app w/ Postgres support
+```sh
+rails new sweater-weather --api -d postgresql -T --skip-turbolinks --skip-spring
 ```
 #### Creating a Model (name it something singular)
 ```sh
